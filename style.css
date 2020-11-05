@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* #1 Create this button */
+.checkoutBtn {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 5rem auto;
+    display: inline-block;
+    padding: .75rem;
+    color: #555;
+    background: linear-gradient(to top, #b0b0b0, #c5c5c5 50%, #d5d5d5 50%, #ececec);
+    box-shadow: 0px 1px 3px 1px #555,
+                0 0 0 8px #cbcbcb,
+                0 0 0 10px #fff,
+                0 0 0 12px #666;
+    border-radius: .5rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5); 
+}
+
+.checkoutBtn:before, .checkoutBtn::after  {
+    content: '\272D';
+    margin: 0 .25rem;
+    color: #888;
+}
+
+/* #2 Fix The Sidebar */
+
+#sidebar header {
+    background: lightblue;
+}
+#sidebar section {
+    background: lightgreen;
+    width: 75%;
+    float: left;
+    box-sizing: border-box; /* the fox */
+}
+#sidebar article {
+    background: white;
+    margin: 0 0 1rem 0;
+}
+#sidebar aside {
+    background: pink;
+    width: 25%;
+    float: right;
+}
+#sidebar header, 
+#sidebar article, 
+#sidebar section, 
+#sidebar .module {
+    padding: 1rem;
+}
+
+/* #3 Make this fixed width design fluid */
+
+* {
+    box-sizing: border-box; 
+  }
+  
+.page-wrap {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 15px;
+}
+  
+.main-story {
+    position: relative;
+    margin: 0 0 25px 0;
+}
+
+img {
+    display: block; 
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: lightblue;
+}
+
+.story-intro {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
+
+h1 {
+    font-size: 4em;
+}
+h1, h2 {
+    margin: 0 0 10px 0;
+}
+
+.story-intro h1 {
+    font-size: 2.5em; 
+}
+.story-intro p {
+    margin: 0;
+}
+
+.sub-stories {
+    justify-content: space-between;
+    display: flex;
+    overflow: hidden;
+    margin: 0 0 25px 0;
+}
+
+.sub-story {
+    position: relative;
+    font-size: 80%;
+    width: 32%;
+}
+
+@media (max-width: 768px) {
+    .main-story .story-intro {
+        position: relative;
+    }
+    .sub-stories {
+        display: block;
+    }
+    .sub-stories .story-intro {
+        display: inline-block;
+        width: 75%;
+        right: 0;
+        top: 0;
+    }
+    .sub-story {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .sub-story img {
+        width: 25%;
+    }
+    .story-intro h1 {
+        font-size: 2em; 
+    }
+}
