@@ -5,6 +5,7 @@ body {
 }
 
 /* #1 Create this button */
+
 .checkoutBtn {
     text-decoration: none;
     text-transform: uppercase;
@@ -38,7 +39,7 @@ body {
     background: lightgreen;
     width: 75%;
     float: left;
-    box-sizing: border-box; /* the fox */
+    box-sizing: border-box; /* the fix */
 }
 #sidebar article {
     background: white;
